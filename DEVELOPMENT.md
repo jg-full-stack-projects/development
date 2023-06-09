@@ -12,7 +12,7 @@ If you are not installing Docker and want to run Podman as the container backend
 
 First we need to activate the podman socket service and start it
 ```
-sudo systemctl enable --now podman.socket
+systemctl enable --user --now podman.socket
 ```
 
 And point the DOCKER\_SOCKET to the podman socket 
